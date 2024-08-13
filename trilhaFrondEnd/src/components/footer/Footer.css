@@ -1,0 +1,14 @@
+.footer {
+    padding-block: 20px;
+    text-align: center;
+    border-top: 1px solid #3d3d3d;
+}
+
+.footer__description {
+    
+    color: var(--color-outline);
+}
+
+.footer__description-name {
+    color: var(--color-secondary);
+}

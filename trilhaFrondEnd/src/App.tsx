@@ -7,6 +7,7 @@ import Hobbies from './components/hobbies/Hobbies'
 import Loader from './components/loader/Loader'
 import Motivation from './components/motivation/Motivation'
 import Skills from './components/skills/Skills'
+import BackToTop from './components/back-to-top/BackToTop'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,6 +30,7 @@ function App() {
           <Hobbies />
           <Motivation />
           <Footer />
+          <BackToTop />
         </>
       )}
     </>

@@ -1,0 +1,148 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 48px;
+  background-color: var(--color-primary);
+
+  @media (min-width: 744px) {
+    position: relative;
+  }
+
+  @media (min-width: 1200px) {
+    height: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+}
+
+.header__container {
+
+  @media (min-width: 744px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 21px;
+}
+
+.header__logo-img {
+    width: 58px;
+    height: 46px;
+
+    @media (min-width: 1200px) {
+      width: 78px;
+    height: 66px;
+    }
+}
+
+.menu__icon {
+  color: var(--color-secondary);
+
+  @media (min-width: 744px) {
+    display: none;
+  }
+}
+
+.rotate {
+  transform: rotate(0.5turn);
+  transition: transform 0.5s linear;
+}
+
+.rotate-inverse {
+  transform: rotate(0turn);
+  transition: transform 0.5s linear;
+}
+
+.hidden {
+  transform: translateX(-150%);
+  transition: transform 0.5s linear;
+}
+
+.visible {
+  transform: translateX(-0%);
+  transition: transform 0.5s linear;
+}
+
+.menu__nav {
+  margin-top: 48px;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 16px;
+  gap: 40px;
+
+  @media (min-width:744px) {
+    color: white;
+    transform: none;
+    height: 70px;
+    margin-top: 0;
+    position: relative;
+  }
+}
+
+.menu__nav-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__nav-img{
+  width: 78px;
+  height: 66px;
+}
+
+.menu__list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  gap: 40px;
+  padding: 0;
+
+  @media (min-width:744px) {
+    list-style: none;
+    gap: 20px;
+    flex-direction: row;
+  }
+}
+
+.menu__item {
+  color: var(--color-secondary);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  border-bottom: 1px solid #3d3d3d;
+
+  @media (min-width:744px) {
+    list-style: none;
+    gap: 20px;
+    flex-direction: row;
+    border-bottom: none;
+  }
+}
+
+.menu__item-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu__item:hover {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}

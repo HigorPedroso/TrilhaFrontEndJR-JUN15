@@ -33,11 +33,3 @@
   color: var(--color-outline);
   font-size: var(--fs-regular);
 }
-
-.motivation__description-img {
-  width: 50%;
-
-  @media (min-width: 1200px) {
-    width: 20%;
-  }
-}

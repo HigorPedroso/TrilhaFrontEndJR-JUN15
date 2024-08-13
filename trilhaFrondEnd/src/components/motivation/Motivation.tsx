@@ -12,12 +12,6 @@ const Motivation = () => {
           sucesso está ao meu alcance. E pretendo conquistar muitas coisas como
           desenvolvedor Full Stack.
         </p>
-
-        <img
-          src="./../../../img/motivation.png"
-          alt="Motivação"
-          className="motivation__description-img"
-        />
       </div>
     </section>
   );

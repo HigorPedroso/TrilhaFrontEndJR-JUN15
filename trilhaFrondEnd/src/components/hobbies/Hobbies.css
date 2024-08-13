@@ -1,0 +1,78 @@
+.hobbies {
+    background-color: var(--color-outline);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-block: 100px;
+    padding-inline: 21px;
+
+    @media (min-width: 744px) {
+        gap: 40px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.hobbies__content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    @media (min-width: 1200px) {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        flex-direction: row;
+        gap: 50px;
+    }
+}
+
+.hobbies__description-text:not(:first-child) {
+    font-size: var(--fs-regular);
+    margin-top: 15px;
+}
+
+.hobbies__hobbie {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 21px;
+    flex-wrap: wrap;
+}
+
+.hobbies__hobbie-block {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.hobbies__hobbie-block:hover {
+    background-color: var(--color-primary);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.hobbies__hobbie-block:hover .icons-reverse {
+    color: var(--color-outline);
+    transition: color 0.5s ease-in-out;
+}
+
+.hobbies__hobbie-block:hover .icons-reverse {
+    color: var(--color-outline);
+    transition: color 0.5s ease-in-out;
+}
+
+.hobbies__hobbie-block:hover .hobbie__description {
+    color: var(--color-outline);
+    transition: color 0.5s ease-in-out;
+}

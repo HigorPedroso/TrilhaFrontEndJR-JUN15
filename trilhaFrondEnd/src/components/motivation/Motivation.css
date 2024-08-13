@@ -1,0 +1,43 @@
+.motivation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-block: 100px;
+  padding-inline: 21px;
+
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.motivation__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.motivation__description-text {
+  border: 1px solid var(--color-secondary);
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--color-outline);
+  font-size: var(--fs-regular);
+}
+
+.motivation__description-img {
+  width: 50%;
+
+  @media (min-width: 1200px) {
+    width: 20%;
+  }
+}

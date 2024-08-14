@@ -72,7 +72,7 @@
 }
 
 .featuredBanner__img {
-    background-color: black;
+    background-color: var(--color-primary);
     height: 50%;
     border-radius: 50%;
 }

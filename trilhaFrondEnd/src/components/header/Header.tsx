@@ -5,7 +5,12 @@ import { IconContext } from "react-icons";
 import { FaWindowClose } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-const Header = () => {
+interface Props {
+  lightTheme: boolean;
+  changeTheme: () => void;
+}
+
+const Header: React.FC<Props> = ({ lightTheme, changeTheme }) => {
   const [menuMobile, setMenuMobile] = useState<Boolean>(false);
   const menuOptions = [
     ["Habilidades", "#skills"],
@@ -47,6 +52,10 @@ const Header = () => {
               </a>
             </li>
           ))}
+          <label className="switch">
+              <input type="checkbox" checked={lightTheme} onChange={changeTheme} />
+              <span className="slider round"></span>
+            </label>
         </ul>
       </nav>
       </div>

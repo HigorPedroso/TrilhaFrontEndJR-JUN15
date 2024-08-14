@@ -8,9 +8,15 @@ import Loader from './components/loader/Loader'
 import Motivation from './components/motivation/Motivation'
 import Skills from './components/skills/Skills'
 import BackToTop from './components/back-to-top/BackToTop'
+import useLocalStorage from 'use-local-storage'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [lightTheme, setLightTheme] = useLocalStorage('lightTheme', false);
+
+  const changeTheme = () => {
+    setLightTheme(!lightTheme);
+  };
 
   useEffect(() => {
     setTimeout(() => {
@@ -19,12 +25,12 @@ function App() {
   }, []);
 
   return (
-    <>
+    <body data-theme={lightTheme ? 'light' : 'dark'}>
       {isLoading ? (
         <Loader />
       ) : (
         <>
-          <Header />
+          <Header lightTheme={lightTheme} changeTheme={changeTheme} />
           <FeaturedHeader />
           <Skills />
           <Hobbies />
@@ -33,7 +39,7 @@ function App() {
           <BackToTop />
         </>
       )}
-    </>
+    </body>
   );
 }
 

@@ -19,3 +19,9 @@
   --fs-regular: 1rem;
   --fs-infos: 12px;
 }
+
+[data-theme='light'] {
+  --color-primary: #ffffff;
+  --color-secondary: #e53939;
+  --color-outline: #000000;
+}

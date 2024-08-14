@@ -59,8 +59,6 @@ const Header: React.FC<Props> = ({ lightTheme, changeTheme }) => {
         </ul>
       </nav>
       </div>
-      
-      
     </div>
   );
 };
